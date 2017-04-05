@@ -1,0 +1,61 @@
+body {
+    // @include baseline-grid-old(32);
+    // @include baseline-grid(32);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    // font-size: 2vw;
+    // line-height: 3.2vw;
+    background-color: $color__white;
+    color: $color__black;
+}
+
+p { margin: $margin__small 0 0 0; }
+a { text-decoration: none; }
+address { font-style:normal; }
+
+hr {
+    border: 0;
+    height: 1px;
+    margin: $margin__small/4 0 0 0;
+    color: $color__light-grey;
+}
+
+a:link    { color: $color__red; }
+a:visited { color: $color__red; } 
+a:hover   { color: $color__red; }
+a:active  { color: $color__red; }
+
+@mixin link-colors {
+    a:link    { color: $color__red; }
+    a:visited { color: $color__red; } 
+    a:hover   { color: $color__red; }
+    a:active  { color: $color__red; }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    margin: $margin__small 0 0 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1 {
+  color: orangered;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 64px;
+  text-decoration: none;
+
+//   a:link { color: $color__white; text-decoration: none; }
+//   a:visited { color: $color__white; text-decoration: none; } 
+//   a:hover { color: $color__red; text-decoration: none; }
+//   a:active { color: $color__red; text-decoration: none; }
+
+//   @media screen and (max-width: $screen-size__small) {
+//     font-size: 3em;
+//     letter-spacing: -2px;
+//   }
+}

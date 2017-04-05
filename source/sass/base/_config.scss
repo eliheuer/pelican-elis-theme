@@ -1,0 +1,34 @@
+// Global Configuration
+
+// Font Weights
+$font-weight__regular         : 400;
+$font-weight__regular-italic  : 400i;
+$font-weight__bold            : 700;
+$font-weight__bold-italic     : 700i;
+
+// Colors
+$color__black                 : #222222;
+$color__dark-grey             : #444444;
+$color__medium-grey           : #666666;
+$color__light-grey            : #999999;
+$color__white                 : #E0E0EE;
+$color__red                   : #FF3b30;
+$color__orange                : #FF4500;
+$color__yellow                : #ffCC00;
+$color__green                 : #509D4D;
+$color__blue                  : #3498DB;
+$color__purple                : #6c3483;
+
+// Type
+$base__font-size              : 20px;
+$base__line                   : 27px;
+
+// Screen Sizes
+$screen-size__small           : 700px;
+$screen-size__medium          : 1100px;
+$screen-size__large           : 1500px;
+
+// Vertical Margins
+$margin__small                : 32px;   
+$margin__medium               : 64px;
+$margin__large                : 128px;

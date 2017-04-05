@@ -1,0 +1,60 @@
+.highlight pre
+{
+    margin-top: 32px;
+    padding: 32px;
+    background: $color__black;
+    color: $color__white;
+}
+.highlight .hll { background-color: $color__dark-grey }
+.highlight .c   { color: $color__medium-grey } /* Comment */
+.highlight .err { color: $color__red; background-color: $color__black } /* Error */
+.highlight .k   { color: $color__orange } /* Keyword */
+.highlight .l   { color: $color__purple } /* Literal */
+.highlight .n   { color: $color__white } /* Name */
+.highlight .o   { color: $color__blue } /* Operator */
+.highlight .p   { color: $color__white } /* Punctuation */
+.highlight .cm  { color: $color__medium-grey } /* Comment.Multiline */
+.highlight .cp  { color: $color__medium-grey } /* Comment.Preproc */
+.highlight .c1  { color: $color__medium-grey } /* Comment.Single */
+.highlight .cs  { color: $color__medium-grey } /* Comment.Special */
+.highlight .ge  { font-style: italic } /* Generic.Emph */
+.highlight .gs  { font-weight: bold } /* Generic.Strong */
+.highlight .kc  { color: $color__orange } /* Keyword.Constant */
+.highlight .kd  { color: $color__orange } /* Keyword.Declaration */
+.highlight .kn  { color: $color__yellow } /* Keyword.Namespace */
+.highlight .kp  { color: $color__orange } /* Keyword.Pseudo */
+.highlight .kr  { color: $color__orange } /* Keyword.Reserved */
+.highlight .kt  { color: $color__orange } /* Keyword.Type */
+.highlight .ld  { color: $color__yellow } /* Literal.Date */
+.highlight .m   { color: $color__purple } /* Literal.Number */
+.highlight .s   { color: $color__yellow } /* Literal.String */
+.highlight .na  { color: $color__green } /* Name.Attribute */
+.highlight .nb  { color: $color__green } /* Name.Function */
+.highlight .nl  { color: $color__white } /* Name.Label */
+.highlight .nn  { color: $color__white } /* Name.Namespace */
+.highlight .nx  { color: $color__green } /* Name.Other */
+.highlight .py  { color: $color__white } /* Name.Property */
+.highlight .nt  { color: $color__yellow } /* Name.Tag */
+.highlight .nv  { color: $color__white } /* Name.Variable */
+.highlight .ow  { color: $color__yellow } /* Operator.Word */
+.highlight .w   { color: $color__white } /* Text.Whitespace */
+.highlight .mf  { color: $color__purple } /* Literal.Number.Float */
+.highlight .mh  { color: $color__purple } /* Literal.Number.Hex */
+.highlight .mi  { color: $color__purple } /* Literal.Number.Integer */
+.highlight .mo  { color: $color__purple } /* Literal.Number.Oct */
+.highlight .sb  { color: $color__yellow } /* Literal.String.Backtick */
+.highlight .sc  { color: $color__yellow } /* Literal.String.Char */
+.highlight .sd  { color: $color__yellow } /* Literal.String.Doc */
+.highlight .s2  { color: $color__yellow } /* Literal.String.Double */
+.highlight .se  { color: $color__purple } /* Literal.String.Escape */
+.highlight .sh  { color: $color__yellow } /* Literal.String.Heredoc */
+.highlight .si  { color: $color__yellow } /* Literal.String.Interpol */
+.highlight .sx  { color: $color__yellow } /* Literal.String.Other */
+.highlight .sr  { color: $color__yellow } /* Literal.String.Regex */
+.highlight .s1  { color: $color__yellow } /* Literal.String.Single */
+.highlight .ss  { color: $color__yellow } /* Literal.String.Symbol */
+.highlight .bp  { color: $color__white } /* Name.Builtin.Pseudo */
+.highlight .vc  { color: $color__white } /* Name.Variable.Class */
+.highlight .vg  { color: $color__white } /* Name.Variable.Global */
+.highlight .vi  { color: $color__white } /* Name.Variable.Instance */
+.highlight .il  { color: $color__purple } /* Literal.Number.Integer.Long */
