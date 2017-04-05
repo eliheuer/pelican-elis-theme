@@ -1,5 +1,7 @@
-.highlight pre
-{
+.highlight pre {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2vw;
+    line-height: 1;
     margin-top: 32px;
     padding: 32px;
     background: $color__black;
