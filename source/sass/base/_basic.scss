@@ -1,13 +1,15 @@
 body {
     font-family: 'Libre Plantin', serif;
-    font-size:1.5vmax;
+    font-size:3vmin;
     line-height: 1.5em;
     background-color: $color__white;
     color: $color__black;
 }
 
 p { 
-    margin: $margin__small 0 0 0; 
+  // text-rendering: optimizeLegibility;
+  // font-feature-settings: "kern" 1;
+  margin: $margin__small 0 0 0; 
 }
 
 a {
@@ -48,13 +50,29 @@ ol {
 }
 
 h1 {
+  font-size:6vmin;
+  margin-bottom: 2em;
   font-weight: regular;
   color: $color__black;
   text-decoration: none;
-  a:link    { color: $color__black; }
-  a:visited { color: $color__black; } 
-  a:hover   { color: $color__black; }
-  a:active  { color: $color__black; }
+}
+
+h2 {
+  font-size:3vmin;
+  font-weight: regular;
+  color: $color__black;
+  text-decoration: none;
+}
+
+h3 {
+  font-size:3vmin;
+  font-weight: regular;
+  color: $color__black;
+  text-decoration: none;
+}
+
+.post-info {
+  margin-bottom: 1em;
 }
 
 .wrapper {
