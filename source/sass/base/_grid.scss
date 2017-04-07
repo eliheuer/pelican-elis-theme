@@ -1,29 +1,29 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-gap: 2vw;
-  margin: 5vw;
+  grid-gap: 4vw;
+  margin: 4vw;
   max-width: 100vw;
 }
 .wrapper > div {
-  border: 2px solid rgb(0,0,0);
-  background-color: rgba(0,0,0,0.2);
+  // border: 2px solid rgb(0,0,0);
+  // background-color: rgba(0,0,0,0.1);
   padding: 1vw;
 }
-.one {
+.header {
   grid-column: 1 / 9;
   grid-row: 1;
 }
-.two {
-  grid-column: 1 / 5;
+.about {
+  grid-column: 1 / 3;
   grid-row: 2;
   @media screen and (max-width: $screen__small) {
     grid-column: 1 / 9;
     grid-row: 2;
   }
 }
-.three { 
-  grid-column: 5 / 9;
+.content { 
+  grid-column: 3 / 7;
   grid-row: 2;
   @media screen and (max-width: $screen__small) {
     grid-column: 1 / 9;
@@ -31,21 +31,21 @@
   }
 }
 .four {
-  grid-column: 1/ 2;
+  grid-column: 1/ 3;
   grid-row: 3;
   @media screen and (max-width: $screen__small) {
     grid-row: 4;
   }
 }
 .five {
-  grid-column: 3/ 4;
+  grid-column: 3/ 5;
   grid-row: 3;
   @media screen and (max-width: $screen__small) {
     grid-row: 4;
   }
 }
 .six {
-  grid-column: 5/ 6;
+  grid-column: 5/ 7;
   grid-row: 3;
   @media screen and (max-width: $screen__small) {
     grid-row: 4;

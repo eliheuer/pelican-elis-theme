@@ -9,23 +9,17 @@
 </head>
 
 <div class="wrapper">
-  <div class="one">Eli Heuer's Programming Blog </div>
-  <div class="two">Two
-    <P>toot toot toot toot toot toot toot toot toot toot toot toot toot toot</P>
-    <P>toot toot toot toot toot toot toot toot toot toot toot toot toot toot</P>
-    <P>toot toot toot toot toot toot toot toot toot toot toot toot toot toot</P>
-    <P>toot toot toot toot toot toot toot toot toot toot toot toot toot toot</P>
+    <div class="header">
+        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}<strong>{{ SITESUBTITLE }}</strong></a></h1>
+    </div>
+  <div class="about">
+    <p class="heading">About:</p>
+    <p>🐘 <a href="https://mastodon.social/users/elih">Mastodon</a></p>
+    <p>🐙 <a href="https://github.com/eliheuer">GitHub</a></p>
+    <p>🐦 <a href="https://twitter.com/eliheuer">Twitter</a></p>
   </div>
-  <div class="three">Three
-    <P>toot toot toot toot toot toot toot toot toot toot toot toot toot toot</P>
-    <P>toot toot toot toot toot toot toot toot toot toot toot toot toot toot</P>
-    <P>toot toot toot toot toot toot toot toot toot toot toot toot toot toot</P>
-    <P>toot toot toot toot toot toot toot toot toot toot toot toot toot toot</P>
-  </div>
-  <div class="four">Four</div>
-  <div class="five">Five</div>
-  <div class="six">Six</div>
-  <div class="seven">Seven</div>
+  {% block content %}
+  {% endblock %}
 </div>
 
 </body>

@@ -1,14 +1,12 @@
 body {
+    background-color: $color__black;
+    color: $color__white;
     font-family: 'Libre Plantin', serif;
-    font-size:3vmax;
+    font-size:1.5vmax;
     line-height: 1.5em;
-    background-color: $color__white;
-    color: $color__black;
 }
 p { 
-  // text-rendering: optimizeLegibility;
-  // font-feature-settings: "kern" 1;
-  margin: $margin__small 0 0 0; 
+  // margin: $margin__small 0 0 0; 
 }
 a {
     text-decoration: dotted;
@@ -22,10 +20,10 @@ hr {
     margin: $margin__small/4 0 0 0;
     color: $color__light-grey;
 }
-a:link    { color: $color__red; }
-a:visited { color: $color__red; } 
-a:hover   { color: $color__red; }
-a:active  { color: $color__red; }
+a:link    { color: $color__white; }
+a:visited { color: $color__white; } 
+a:hover   { color: $color__white; }
+a:active  { color: $color__white; }
 
 @mixin link-colors {
     a:link    { color: $color__red; }
@@ -43,23 +41,30 @@ ol {
   list-style: none;
 }
 h1 {
-  font-size:6vmin;
+  font-size:3vmax;
   margin-bottom: 2em;
   font-weight: regular;
   color: $color__black;
   text-decoration: none;
 }
 h2 {
+  color: $color__red;
+  font-size:1.5vmax;
+  font-weight: regular;
+  text-decoration: none;
+}
+h3 {
+  font-size:1.5vmax;
   font-size:3vmin;
   font-weight: regular;
   color: $color__black;
   text-decoration: none;
 }
-h3 {
-  font-size:3vmin;
-  font-weight: regular;
-  color: $color__black;
-  text-decoration: none;
+.heading {
+  margin-bottom: 1.5vmax;
+}
+.published {
+  color: $color__medium-grey;
 }
 .post-info {
   margin-bottom: 1em;
