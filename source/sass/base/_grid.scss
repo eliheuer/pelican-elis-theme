@@ -1,15 +1,60 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 10px;
-  background-color: #fff;
-  color: #444;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 2vw;
+  margin: 5vw;
+  max-width: 100vw;
 }
-
-.box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+.wrapper > div {
+  border: 2px solid rgb(0,0,0);
+  background-color: rgba(0,0,0,0.2);
+  padding: 1vw;
+}
+.one {
+  grid-column: 1 / 9;
+  grid-row: 1;
+}
+.two {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  @media screen and (max-width: $screen__small) {
+    grid-column: 1 / 9;
+    grid-row: 2;
+  }
+}
+.three { 
+  grid-column: 5 / 9;
+  grid-row: 2;
+  @media screen and (max-width: $screen__small) {
+    grid-column: 1 / 9;
+    grid-row: 3;
+  }
+}
+.four {
+  grid-column: 1/ 2;
+  grid-row: 3;
+  @media screen and (max-width: $screen__small) {
+    grid-row: 4;
+  }
+}
+.five {
+  grid-column: 3/ 4;
+  grid-row: 3;
+  @media screen and (max-width: $screen__small) {
+    grid-row: 4;
+  }
+}
+.six {
+  grid-column: 5/ 6;
+  grid-row: 3;
+  @media screen and (max-width: $screen__small) {
+    grid-row: 4;
+  }
+}
+.seven {
+  grid-column: 7/ 9;
+  grid-row: 3;
+  @media screen and (max-width: $screen__small) {
+    grid-row: 4;
+  }
 }
