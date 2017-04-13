@@ -1,13 +1,13 @@
 body {
     background-color: $color__black;
     color: $color__white;
-    font-family: 'Roboto', sans-serif;
-    // font-family: 'Libre Plantin', serif;
-    font-size:1.5vmax;
-    line-height: 1.5em;
+    // font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Plantin', serif;
+    font-size: 1.3em;
+    line-height: 1.9rem;
 }
-p { 
-  // margin: $margin__small 0 0 0; 
+p {
+    //
 }
 a {
     text-decoration: dotted;
@@ -25,7 +25,6 @@ a:link    { color: $color__white; }
 a:visited { color: $color__white; } 
 a:hover   { color: $color__white; }
 a:active  { color: $color__white; }
-
 @mixin link-colors {
     a:link    { color: $color__red; }
     a:visited { color: $color__red; } 
@@ -39,36 +38,38 @@ img {
     vertical-align: middle;
 }
 ol {
-  list-style: none;
+    list-style: none;
 }
 h1 {
-  font-size:3vmax;
-  margin-bottom: 2em;
-  font-weight: regular;
-  color: $color__black;
-  text-decoration: none;
+    line-height: 2.2rem;
+    font-weight: regular;
+    color: $color__black;
+    text-decoration: none;
+    margin-bottom: $margin__large;
 }
 h2 {
-  color: $color__red;
-  font-size:1.5vmax;
-  font-weight: regular;
-  text-decoration: none;
+    font-size: 1.3em;
+    line-height: 1.9rem;
+    font-weight: regular;
+    text-decoration: none;
 }
 h3 {
-  font-size:1.5vmax;
-  font-size:3vmin;
-  font-weight: regular;
-  color: $color__black;
-  text-decoration: none;
+    font-size: 1.3em;
+    line-height: 1.9rem;
+    font-weight: regular;
+    color: $color__black;
+    text-decoration: none;
 }
 .heading {
-  margin-bottom: 3vmax;
+    margin: $margin__large 0 $margin__small 0;
 }
 .published {
   color: $color__medium-grey;
 }
 .post-info {
-  margin-bottom: 1em;
+  font-size: 1.3em;
+  line-height: 1.9rem;
+  margin-bottom: $margin__medium;
 }
 img {
   margin: $margin__large 0;
