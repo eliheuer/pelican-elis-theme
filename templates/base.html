@@ -4,6 +4,8 @@
     {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
     {% endblock head %}
 </head>
@@ -16,7 +18,7 @@
     <p class="heading">About:</p>
     <p>🐘 <a href="https://mastodon.social/users/elih">Mastodon</a></p>
     <p>🐙 <a href="https://github.com/eliheuer">GitHub</a></p>
-    <p>🐦 <a href="https://twitter.com/eliheuer">Twitter</a></p>
+    <p>📧 <a href="mailto:elih@protonmail.com?Subject=Hello" target="_top">Email</a></p>
   </div>
   {% block content %}
   {% endblock %}

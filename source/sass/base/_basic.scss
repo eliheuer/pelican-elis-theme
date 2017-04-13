@@ -1,7 +1,8 @@
 body {
     background-color: $color__black;
     color: $color__white;
-    font-family: 'Libre Plantin', serif;
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Libre Plantin', serif;
     font-size:1.5vmax;
     line-height: 1.5em;
 }
@@ -61,11 +62,14 @@ h3 {
   text-decoration: none;
 }
 .heading {
-  margin-bottom: 1.5vmax;
+  margin-bottom: 3vmax;
 }
 .published {
   color: $color__medium-grey;
 }
 .post-info {
   margin-bottom: 1em;
+}
+img {
+  margin: $margin__large 0;
 }
