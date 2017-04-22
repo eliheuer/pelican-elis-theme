@@ -1,5 +1,9 @@
-.entry-content {
-    margin-top: 1.55em;
+.heading {
+    margin-top: 0.3em;
+    font-weight: $font-weight__bold;
+}
+
+.site-footer__type {
     a:link    { color: $color__red; }
     a:visited { color: $color__red; } 
     a:hover   { color: $color__yellow; }

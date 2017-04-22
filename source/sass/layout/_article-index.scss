@@ -1,11 +1,15 @@
-.heading {
-    // margin: $margin__large 0 $margin__small 0;
-}
-
 .published {
+    color: $color__medium-grey;
+    float: right;
+    @media screen and (max-width: $screen__small) {
+        display: block;
+        float: none;
+    }
+}
+.published-post {
   color: $color__medium-grey;
 }
 
 .post-info {
-  margin-bottom: $margin__medium;
+  // margin-bottom: 1.55em;
 }

@@ -22,11 +22,11 @@
 {{ translations.translations_for(article) }}
   </header>
   <footer class="post-info">
-    <time class="published" datetime="{{ article.date.isoformat() }}">
+    <time class="published-post" datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </time>
   {% if article.modified %}
-    <time class="modified" datetime="{{ article.modified.isoformat() }}">
+    <time class="modified-post" datetime="{{ article.modified.isoformat() }}">
       {{ article.locale_modified }}
     </time>
   {% endif %}

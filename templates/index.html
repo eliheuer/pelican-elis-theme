@@ -5,14 +5,15 @@
 {% endblock %}
 
 <div class="content">
-    <p class="heading">Article Index:</p>
+    <h2 class="entry-title">Article Index</h2>
+    <hr class="medium">
     <ol id="post-list">
     {% for article in articles_page.object_list %}
     <li><article class="hentry">
-        <header> <p class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></p> </header>
-        <footer class="post-info">
+        <header> 
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
             <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
-        </footer><!-- /.post-info -->
+        </header>
     </article></li>
 {% endfor %}
 </ol><!-- /#posts-list -->

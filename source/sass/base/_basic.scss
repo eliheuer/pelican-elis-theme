@@ -13,12 +13,14 @@ a:hover   { color: $color__red; }
 a:active  { color: $color__red; }
 
 h1 {
-    font-size: $type__medium;
+    margin-top: 0.6em;
+    font-size: $type__large;
     font-weight: regular;
+    line-height: 1em;
 }
 
 h2 {
-    font-size: $type__small;
+    font-size: $type__medium;
     font-weight: regular;
 }
 
@@ -45,7 +47,7 @@ h6 {
 img {
     display: table-cell;
     height: 100%;
-    margin: $margin__large 0;
+    margin: 1.35em 0;
     width: 100%;
     vertical-align: middle;
 }
@@ -55,16 +57,21 @@ ol {
 }
 
 hr.large {
-    height: ($margin__small / 3);
+    height: 0.25em;
     border-width:0;
     color: $color__white;
     background-color: $color__white;
-    margin-top: 1em;
+    margin-top: 0.8em;
+    margin-bottom: 2em;
 }
 
 hr.medium {
-    border-top: ($margin__small / 8) solid $color__white;
-    margin-top: $margin__small;
+    height: 0.125em;
+    border-width:0;
+    color: $color__white;
+    background-color: $color__white;
+    margin-top: 0.9em;
+    margin-bottom: 0.6em;
 }
 
 time {
