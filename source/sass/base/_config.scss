@@ -20,16 +20,21 @@ $color__blue                  : #3498DB;
 $color__purple                : #6c3483;
 $color__code                  : #CCFFCC;
 
-// Type
-$base__font-size              : 20px;
-$base__line                   : 27px;
-
 // Screen Sizes
 $screen__small           :  900px;
 $screen__medium          : 1100px;
 $screen__large           : 1500px;
 
 // Vertical Margins
-$margin__small                : 1rem;   
-$margin__medium               : 2rem;
-$margin__large                : 4rem;
+$margin__small                : 1em;   
+$margin__medium               : 2em;
+$margin__large                : 5em;
+
+// Type
+$type__primary-font         : 'Libre Plantin', serif;
+$type__secondary-font       : 'Roboto', sans-serif;
+$type__base-size            : 1.3em;
+$type__small                : 1em;
+$type__medium               : 2em;
+$type__large                : 4em;
+$type__line-height          : 1.55em;

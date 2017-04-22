@@ -6,21 +6,14 @@
     <meta charset="utf-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="//basehold.it/31/255/255/255">
     {% endblock head %}
 </head>
 
 <div class="wrapper">
-    <div class="header">
-        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}<strong>{{ SITESUBTITLE }}</strong></a></h1>
-        <hr class="large">
-    </div>
   {% block content %}
   {% endblock %}
     <div class="about">
         <p class="heading">Contact:</p>
-        <hr class="medium">
         <p>🐘 <a href="https://mastodon.social/users/elih">GNU Social</a></p>
         <p>🐙 <a href="https://github.com/eliheuer">GitHub</a></p>
         <p>📧 <a href="mailto:elih@protonmail.com?Subject=Hello" target="_top">Email</a></p>

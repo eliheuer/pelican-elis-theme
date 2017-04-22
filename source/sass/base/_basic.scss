@@ -1,76 +1,72 @@
 body {
     background-color: $color__black;
     color: $color__white;
-    // font-family: 'Roboto', sans-serif;
-    font-family: 'Libre Plantin', serif;
-    font-size: 1.3em;
-    line-height: 1.9rem;
+    font-family: $type__secondary-font;
+    font-size: $type__base-size;
+    line-height: $type__line-height;
 }
-p {
-    //
-}
-a {
-    text-decoration: dotted;
-}
-address { 
-    font-style:normal; 
-}
-hr {
-    border: 0;
-    height: 1px;
-    margin: $margin__small/4 0 0 0;
-    color: $color__light-grey;
-}
+
+a         { text-decoration: none; }
 a:link    { color: $color__white; }
 a:visited { color: $color__white; } 
-a:hover   { color: $color__white; }
-a:active  { color: $color__white; }
-@mixin link-colors {
-    a:link    { color: $color__red; }
-    a:visited { color: $color__red; } 
-    a:hover   { color: $color__red; }
-    a:active  { color: $color__red; }
+a:hover   { color: $color__red; }
+a:active  { color: $color__red; }
+
+h1 {
+    font-size: $type__medium;
+    font-weight: regular;
 }
+
+h2 {
+    font-size: $type__small;
+    font-weight: regular;
+}
+
+h3 {
+    font-size: $type__small;
+    font-weight: regular;
+}
+
+h4 {
+    font-size: $type__small;
+    font-weight: regular;
+}
+
+h5 {
+    font-size: $type__small;
+    font-weight: regular;
+}
+
+h6 {
+    font-size: $type__small;
+    font-weight: regular;
+}
+
 img {
-    height: 100%;
-    width: 100%;
     display: table-cell;
+    height: 100%;
+    margin: $margin__large 0;
+    width: 100%;
     vertical-align: middle;
 }
+
 ol {
     list-style: none;
 }
-h1 {
-    line-height: 2.2rem;
-    font-weight: regular;
-    color: $color__black;
-    text-decoration: none;
-    margin-bottom: $margin__large;
+
+hr.large {
+    height: ($margin__small / 3);
+    border-width:0;
+    color: $color__white;
+    background-color: $color__white;
+    margin-top: 1em;
 }
-h2 {
-    font-size: 1.3em;
-    line-height: 1.9rem;
-    font-weight: regular;
-    text-decoration: none;
+
+hr.medium {
+    border-top: ($margin__small / 8) solid $color__white;
+    margin-top: $margin__small;
 }
-h3 {
-    font-size: 1.3em;
-    line-height: 1.9rem;
-    font-weight: regular;
-    color: $color__black;
-    text-decoration: none;
-}
-.heading {
-    margin: $margin__large 0 $margin__small 0;
-}
-.published {
-  color: $color__medium-grey;
-}
-.post-info {
-  font-size: 1.3em;
-  line-height: 1.9rem;
-  margin-bottom: $margin__medium;
-}
-img {
-  margin: $margin__large 0;
+
+time {
+    font-size: $type__small;
 }
