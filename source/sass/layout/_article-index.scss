@@ -11,5 +11,10 @@
 }
 
 .post-info {
+  color: $color__black; 
   // margin-bottom: 1.55em;
+}
+
+.post-list {
+  a:link { border-bottom-style: none; }
 }

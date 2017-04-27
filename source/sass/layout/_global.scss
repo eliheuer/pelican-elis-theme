@@ -4,8 +4,9 @@
 }
 
 .site-footer__type {
-    a:link    { color: $color__red; }
-    a:visited { color: $color__red; } 
-    a:hover   { color: $color__yellow; }
-    a:active  { color: $color__yellow; }
+    //
+}
+
+.about {
+      a:link { border-bottom-style: none; }
 }

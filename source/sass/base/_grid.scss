@@ -17,6 +17,7 @@
   grid-column: 1 / 9;
   grid-row: 1;
 }
+
 .about {
     grid-column: 5 / 7;
     grid-row: 2;
@@ -25,21 +26,27 @@
         grid-row: 3;
     }
 }
-.copyleft {
+
+.opensource {
     grid-column: 7 / 9;
     grid-row: 2;
-    p {
-        margin-bottom: $type__line-height;
+    p { margin-bottom: $type__line-height; }
+    @media screen and (max-width: $screen__small) {
+        grid-column: 1 / 9;
+        grid-row: 5;
     }
+}
+
+.copyright {
+    grid-column: 7 / 9;
+    grid-row: 3;
+    p { margin-bottom: $type__line-height; }
     @media screen and (max-width: $screen__small) {
         grid-column: 1 / 9;
         grid-row: 4;
     }
 }
-.copyleft-symbol {
-  display:inline-block;
-  transform: rotate(180deg);
-}
+
 .content { 
   grid-column: 1 / 5;
   grid-row: 2;

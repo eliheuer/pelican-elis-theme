@@ -1,7 +1,4 @@
 .entry-content {
+    color: $color__black; 
     margin-top: 1.55em;
-    a:link    { color: $color__red; }
-    a:visited { color: $color__red; } 
-    a:hover   { color: $color__yellow; }
-    a:active  { color: $color__yellow; }
 }
