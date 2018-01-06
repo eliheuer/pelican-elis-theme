@@ -1,5 +1,7 @@
 body {
-    background-color: $color__white;
+    // background-color: $color__white;
+    background-color: #909090;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23575757' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     color: $color__black;
     font-family: $type__secondary-font;
     font-size: $type__base-size;
@@ -95,6 +97,15 @@ hr.medium {
     border-width:0;
     color: $color__black;
     background-color: $color__black;
+    margin-top: 0.9em;
+    margin-bottom: 0.6em;
+}
+
+hr.small {
+    height: 0em;
+    border-width:0;
+    // color: $color__black;
+    // background-color: $color__black;
     margin-top: 0.9em;
     margin-bottom: 0.6em;
 }
