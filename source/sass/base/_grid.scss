@@ -22,8 +22,12 @@
 .header {
     grid-column: 2 / 7;
     grid-row: 1;
+    @media screen and (max-width: $screen__medium) {
+        grid-column: 1 / 9;
+        grid-row: 1;
+    }
     @media screen and (max-width: $screen__small) {
-        grid-column: 1 / 5;
+        grid-column: 1 / 9;
         grid-row: 1;
     }
 }
@@ -33,9 +37,11 @@
     position: relative;
     grid-column: 7 / 8;
     grid-row: 1;
+    @media screen and (max-width: $screen__medium) {
+	display: none;
+    }
     @media screen and (max-width: $screen__small) {
-        grid-column: 5 / 9;
-        grid-row: 1;
+	display: none;
     }
 }  
 
@@ -51,6 +57,17 @@
 
 // List of recent articles:
 .article-index {
+    grid-column: 2 / 7;
+    grid-row: 2 / 5;
+    @media screen and (max-width: $screen__small) {
+	grid-column: 1 / 9;
+	grid-row: 2 / 5;
+    }
+}
+
+
+// List of recent articles:
+.content {
     grid-column: 2 / 7;
     grid-row: 2 / 5;
     @media screen and (max-width: $screen__small) {
