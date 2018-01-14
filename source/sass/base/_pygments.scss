@@ -1,5 +1,9 @@
 .highlight pre {
+    border-radius: 6px;
     font-family: 'Inconsolata', monospace;
+    // font-weight: bold;
+    font-size: $type__code;
+    line-height: $type__code-line-height;
     margin: 1.45em 0;
     padding: 1em;
     background: $color__black;
@@ -8,7 +12,7 @@
 .highlight .hll { background-color: $color__dark-grey }
 .highlight .c   { color: $color__medium-grey } /* Comment */
 .highlight .err { color: $color__red; background-color: $color__black } /* Error */
-.highlight .k   { color: $color__orange } /* Keyword */
+.highlight .k   { color: $color__red } /* Keyword */
 .highlight .l   { color: $color__purple } /* Literal */
 .highlight .n   { color: $color__white } /* Name */
 .highlight .o   { color: $color__blue } /* Operator */

@@ -2,19 +2,17 @@
     color: $color__medium-grey;
     float: right;
     @media screen and (max-width: $screen__small) {
+	margin-bottom: 1em;
         display: block;
         float: none;
     }
 }
 .published-post {
-  color: $color__medium-grey;
+    color: $color__medium-grey;
 }
-
-.post-info {
-  color: $color__black; 
-  // margin-bottom: 1.55em;
-}
-
 .post-list {
-  a:link { border-bottom-style: none; }
+    a:link { border-bottom-style: none; }
+}
+.post-info {
+    margin-bottom: 1.55em;
 }

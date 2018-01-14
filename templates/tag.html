@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ tag }} — {{ SITENAME }}{% endblock %}
+{% block content %}
+<div class="tags-index" id="box">
+        <h2 class="entry-title">{{ tag }}</h2>
+        <hr class="medium">
+        <ol class="post-list">
+        {% for article in articles %}
+            <!-- <a href='{{ SITEURL }}/{{ article.url }}'>{{ article.title }}</a> -->
+            <!-- <td>{{ article.date.strftime("%d %b %Y") }}</td> -->
+            <li>
+                <a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title|striptags }}">{{ article.title }}</a>
+                <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+            </li>
+        {% endfor %}
+        </ol>    
+</div>
+{% endblock %}

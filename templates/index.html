@@ -1,28 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
-<!--<section id="content">-->
 {% block content_title %}
 {% endblock %}
 
-<div class="article-index">
+<div class="article-index" id="box">
     <h2 class="entry-title">Article Index</h2>
     <hr class="medium">
     <ol class="post-list">
-    {% for article in articles_page.object_list %}
-    <li><article class="hentry">
-        <header> 
-            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-            <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
-        </header>
-    </article></li>
-{% endfor %}
-</ol><!-- /#posts-list -->
+        {% for article in articles_page.object_list %}
+        <li><!-- <article class="hentry"> -->
+                <a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title|striptags }}">{{ article.title }}</a>
+                <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+        </li>
+        {% endfor %}
+    </ol>
+
 {% if articles_page.has_other_pages() %}
     {% include 'pagination.html' %}
 {% endif %}
 </div>
 
-
-
-<!--</section> /#content -->
 {% endblock content %}
