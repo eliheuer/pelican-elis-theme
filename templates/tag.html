@@ -2,8 +2,7 @@
 {% block title %}{{ tag }} — {{ SITENAME }}{% endblock %}
 {% block content %}
 <div class="tags-index" id="box">
-        <h2 class="entry-title">{{ tag }}</h2>
-        <hr class="medium">
+        <hr><h3>Tag: {{ tag }}</h2>
         <ol class="post-list">
         {% for article in articles %}
             <!-- <a href='{{ SITEURL }}/{{ article.url }}'>{{ article.title }}</a> -->
@@ -13,6 +12,6 @@
                 <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
             </li>
         {% endfor %}
-        </ol>    
+        </ol>
 </div>
 {% endblock %}

@@ -11,7 +11,7 @@ $color__black                 : #333333;
 $color__dark-grey             : #444444;
 $color__medium-grey           : #666666;
 $color__light-grey            : #999999;
-$color__lighter-grey          : #CCCCCC;
+$color__lighter-grey          : #ddd;
 $color__white                 : #E0E0EE;
 $color__red                   : #FF3b30;
 $color__orange                : #FFa000;
@@ -22,22 +22,20 @@ $color__purple                : #9b59b6;
 $color__code                  : #CCFFCC;
 
 // Screen Sizes
-$screen__small                :  900px;
-$screen__medium               : 1100px;
+$screen__small                : 1050px;
+$screen__medium               : 1300px;
 $screen__large                : 1500px;
 
-// Vertical Margins
+// Margins
 $margin__small                : 1em;   
-$margin__medium               : 2em;
-$margin__large                : 5em;
+$margin__medium               : 1.5em;
+$margin__large                : 4em;
 
-// Type
-$type__primary-font           : 'Wilmette', serif;
-$type__secondary-font         : 'Roboto', sans-serif;
-$type__base-size              :  1.3em;
-$type__code                   :  0.9em;
-$type__small                  :    1em;
+// Type/fonts
+$type__primary-font           : 'Roboto', sans-serif;
+$type__small                  :  1.25em;
 $type__medium                 :  1.5em;
-$type__large                  :    2em;
-$type__line-height            : 1.54em;
+$type__large                  :  2em;
+$type__line-height            :  1.5em;
+$type__code                   :  0.9em;
 $type__code-line-height       :  1.3em;

@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block title %}{{ SITENAME }} - Tags{% endblock %}
 {% block content %}
-    <div class="tags-index" id="box">
-        <h2 class="entry-title">Tags</h2>
-        <hr class="medium">
+    <div class="tags-index">
+        <hr>
+        <h2>Tags</h2>
         <ol class="post-list">
             {%- for tag, articles in tags|sort %}
                 <li class="tags-index"> 

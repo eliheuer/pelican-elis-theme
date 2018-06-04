@@ -1,26 +1,23 @@
 {% extends "base.html" %}
 {% block head %}
-  {{ super() }}
-  {% if article.description %}
-    <meta name="description" content="{{article.description}}" />
-  {% endif %}
-
-  {% for tag in article.tags %}
-    <meta name="tags" content="{{tag}}" />
-  {% endfor %}
-
+    {{ super() }}
+    {% if article.description %}
+        <meta name="description" content="{{article.description}}" />
+    {% endif %}
+    {% for tag in article.tags %}
+        <meta name="tags" content="{{tag}}" />
+    {% endfor %}
 {% endblock %}
 
 {% block content %}
-<div class="content" id="box">
-  <header>
-    <h1 class="entry-title">
-      {{ article.title }}
-    </h1>
-{% import 'translations.html' as translations with context %}
-{{ translations.translations_for(article) }}
-  </header>
-  <footer class="post-info">
+<div class="content">
+    <header>
+        <hr>
+        <h2 id="article-header" class="entry-title">{{ article.title }}</h2>
+        {% import 'translations.html' as translations with context %}
+        {{ translations.translations_for(article) }}
+    </header>
+    <footer class="post-info">
     <time class="published-post" datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </time>
@@ -29,9 +26,9 @@
       {{ article.locale_modified }}
     </time>
   {% endif %}
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+  </footer>
+  <div class="article-content">
     {{ article.content }}
-  </div><!-- /.entry-content -->
+  </div>
 </div>
 {% endblock %}

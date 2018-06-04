@@ -3,18 +3,41 @@
 {% block content_title %}
 {% endblock %}
 
-<div class="article-index" id="box">
-    <h2 class="entry-title">Article Index</h2>
-    <hr class="medium">
+<div class="about">
+    <hr>
+    <h3>About</h3>
+    <p id="margin-bottom">Welcome to my home on the web. I’m a software developer and UI/type designer working to make GNU+Linux a better experience for designers and artists. I also study mathematics at CUNY.</p>
+</div>
+
+<div class="current-projects">
+    <hr><h3>Current Projects</h3><ul>
+    <li>
+        <a href="https://github.com/trufont/trufont/pull/527">TruFont
+        <span id="project-role">(Contributor)</span></a>
+    </li>
+    <li>
+        <a href="https://github.com/eliheuer/epistle">Epistle Typeface
+        <span id="project-role">(Designer)</span></a>
+    </li>
+    <li>
+        <a href="https://bahai-interlinear-prayers.neocities.org">Bahá’í Interlinear Prayers
+        <span id="project-role">(Designer)</span></a>
+    </li>
+</div>
+
+<div class="article-index">
+    <hr>
+    <h3>Article Index</h3>
     <ol class="post-list">
         {% for article in articles_page.object_list %}
-        <li><!-- <article class="hentry"> -->
-                <a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title|striptags }}">{{ article.title }}</a>
-                <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+        <li>
+            <a href="{{ SITEURL }}/{{ article.slug }}" title="{{ article.title|striptags }}">
+                {{ article.title }}</a>
+            <time class="published" datetime="{{ article.date.isoformat() }}">
+                {{ article.locale_date }} </time>
         </li>
         {% endfor %}
     </ol>
-
 {% if articles_page.has_other_pages() %}
     {% include 'pagination.html' %}
 {% endif %}
